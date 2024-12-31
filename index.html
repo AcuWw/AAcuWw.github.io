@@ -1,0 +1,38 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para mi hermosa niña</strong>
+                        <p>
+                            Mi amor, mi niña, mi princesa, mi cielo, mi corazon, mi delfin tan hermoso, feliz fin de año, un año donde nos conocimos, y donde al final disfrutamos
+                            lo mejor que pudimos de ambos, gracias por las risas, por los buenos momentos, por todo los buenos ratos que pasamos y que pasaremos. Gracias por ser 
+                            esa fuente de calor que enciende mi llama, por ser la luz que me ilumina mi camino y gracias sobre todo por ser el amor de mi vida y espero que sigamos
+                            durante mucho mas tiempo juntos mi niña hermosa.
+
+                            ¡Teamo!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
